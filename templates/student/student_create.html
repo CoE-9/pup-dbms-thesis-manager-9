@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   
+	    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/bootstrap.min.css" />
+	    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/bootstrap-theme.min.css" />
+	    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/normalize.css" />
+	    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
+   
+	 	<img class="header" src="../static/images/books1.png">
+	 	<nav class="navbar navbar-default navbar-relative-top" id="header">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        University Thesis Database
+		      </a>
+		    </div>
+		       <ul class="nav navbar-nav navbar-right">
+		      <li class="welcome" style="top:20px"><a href="{{ url|safe }}">{{ url_linktext }}</a></li>
+		      </ul>
+		  </div>
+		</nav>
+	</head>
+
+	<body>
+        <p class="welcome">Hi! Welcome {{user.nickname()}} </p><br>
+
+		<div class="container" id="student_create">
+			<div class="nothing-fancy">
+				<form id="stud_create">
+					<h3>Add Student Information</h3>
+					<div class="col-xs-4">
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" name="s_first_name" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">First Name</span>
+						</label>
+					</span>
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" name="s_last_name" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Middle Name</span>
+						</label>
+					</span>
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" name="s_phone_number" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Last Name</span>
+						</label>
+					</span>
+					</div>
+					<div class="col-xs-4">
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" name="s_email" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Email</span>
+						</label>
+					</span>
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" name="s_phone_num" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Contact Number</span>
+						</label>
+					</span>
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="date" name="s_birthdate" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Birthday</span>
+						</label>
+					</span>
+					</div>
+					<div class="col-xs-4">
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="date" name="s_student_num" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Student NUmber</span>
+						</label>
+					</span>
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="date" name="s_year_graduated" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Year Graduated</span>
+						</label>
+					</span>
+					</div>
+					</br><span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" name="s_picture" placeholder="Type here..." required />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+							<span class="input__label-content input__label-content--hoshi">Picture: </span>
+						</label>
+					</span>
+				</form>
+			</div>
+		</div>
+		<div class="container-fluid" style="color: #fff" id="footer">
+		</div>
+	</body>
+
+ 	<script type = "text/javascript" src = "../static/js/jquery-1.11.3.min.js"></script>
+	<script type = "text/javascript" src = "../static/js/bootstrap.min.js"></script>
+    <script type = "text/javascript" src = "../static/js/script.js"></script>
+    <script type = "text/javascript" src = "../static/js/modernizr.custom.js"></script>
+    
+</html>
